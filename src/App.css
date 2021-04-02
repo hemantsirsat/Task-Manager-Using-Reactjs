@@ -1,38 +1,87 @@
-.App {
+*{
+  background-color: #fae1dd;
+}
+
+.container{
+  max-width: auto;
+  margin: 20px;
+  min-height: 300px;
+  border:1px solid #ffb4a2;
+  padding: 10px;
+}
+
+.header{
   text-align: center;
+  justify-content: space-between;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.task-header{
+  display: inline-block;
+  margin-left: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mark-as-read{
+  float: right;
+  flex:1;
+  border: none;
+  margin: 30px;
+  border-radius: 5px;
+  background: #ffafcc;
+  height: 30px;
+  width: 60px;
+  cursor: pointer;
+  justify-content: flex-end;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.attribute{
+  color: #3c096c;
+}
+
+.name{
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: #f5cac3;
+  width: 99%;
+  height: 30px;
+  border: 0;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.description{
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: #f5cac3;
+  width: 99%;
+  height: 30px;
+  border: 0;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.submitbtn {
+  margin-top: 20px;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  background-color: #ffafcc;
+  height: 35px;
+}
+
+.task-display{
+  /* display: flex; */
+  display: inline-block;
+  flex: auto;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
+  overflow: hidden;
+  width: 80%;
 }
 
-.App-link {
-  color: #61dafb;
+.individual-task{
+  margin-top: 20px;
+  border: 1px solid #ffafcc;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-heading, .task-description{
+  display: flex;
+  margin: 5px;
 }
